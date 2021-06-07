@@ -1,0 +1,36 @@
+<h1>Sign up</h1>
+
+<h1>
+  Sign Up for Photogram
+</h1>
+
+<form method="post" action="/insert_user">
+  <div>
+    <label for="email_box">Email</label>
+    <input id="email_box" name="query_email" placeholder="Enter your email..." type="text">
+  </div>
+  <div>
+    <label for="browser_username">Username</label>
+    <input id="browser_username" type="text" name="query_username" placeholder="Enter a username...">
+  </div>
+  <div>
+    <label for="browser_password">Password</label>
+    <input id="browser_password" type="password" name="query_password" placeholder="Enter a password...">
+  </div>
+  <div>
+    <label for="browser_password_confirmation">Password Confirmation</label>
+    <input id="browser_password_confirmation" type="password" name="query_password_confirmation" placeholder="Please confirm your password...">
+  </div>
+  <div>
+    <label for="private_box">Private</label>
+    <input id="private_box" name="query_private_user" type="checkbox">
+  </div>
+
+  <button>
+    Sign up
+  </button>
+</form>
+
+<p>
+  Or, <a href="/user_sign_in">Sign in</a> instead.
+</p>

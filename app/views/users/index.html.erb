@@ -1,0 +1,37 @@
+<h1>List of users</h1>
+
+
+<table border="1">
+  <tr>
+    <th>
+      Username
+    </th>
+    <th>
+      Private?
+    </th>
+    <th></th>
+  </tr>
+
+  <% @users.each do |user| %>
+    <td>
+      <%= user.username %>
+    </td>
+
+    <% if user.private_user %>
+      <td>
+        Yes
+      </td>
+    <% else %>
+       <td>
+        No
+      </td>
+    <% end %>
+    
+
+    <td>
+      <a href="/users/<%= user.username %>">Show details</a>
+    </td>
+  </tr>
+  
+  <% end %>
+</table>
